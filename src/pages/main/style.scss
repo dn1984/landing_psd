@@ -22,7 +22,7 @@
     }
 }
 
-.container {
+.container-menu {
     max-width: 1866px;
     width: 100%;
     margin: 0 auto;
@@ -31,10 +31,15 @@
     align-items: center;
 }
 
+.container {
+    max-width: 1765px;
+    width: 100%;
+    margin: 0 auto;
+}
+
 .banner {
-    // background-color: #212121;
     background: #212121 url('static/images/banner.jpg') no-repeat;
-    padding: 165px 0 150px;
+    padding: 165px 0 125px;
     display: flex;
     justify-content: flex-end;
     padding-right: 100px;
@@ -73,6 +78,191 @@
         line-height: 66px;
         font-size: 36px;
     }
+}
+
+.video {
+    box-sizing: border-box;
+    text-align: center;
+    padding-bottom: 52px;
+
+    &__border {
+        display: block;
+        margin: 0 auto 64px;
+    }
+
+    &__container {
+        position: relative;
+        border: solid 1px #d8b4a6;
+        display: inline-block;
+        width: 731px;
+        height: 456px;
+        margin-bottom: 150px;
+
+        &:before {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border: solid 1px #d8b4a6;
+            width: 800px;
+            height: 526px;
+            z-index: 10;
+        }
+    }
+
+    &__text {
+        color: #dbd6d6;
+        font-size: 20px;
+        text-align: left;
+        line-height: 31px;
+    }
+}
+
+.advantages {
+    &__title {
+        color: #e8b19c;
+        font-size: 35px;
+        text-align: center;
+        width: 61%;
+        margin: 0 auto 39px;
+        font-weight: 500;
+    }
+
+    &__border-line {
+        margin-bottom: 29px;
+    }
+
+    &__block-1,
+    &__block-3 {
+        display: flex;
+        justify-content: space-between;
+        padding-right: 30px;
+        padding-top: 15px;
+    }
+
+    &__block-1_content,
+    &__block-3_content {
+        margin-right: 53px;
+        padding-top: 11px;
+        position: relative;
+    }
+
+    &__block-1_image,
+    &__block-2_image,
+    &__block-3_image {
+        width: 602px;
+        height: 457px;
+    }
+
+    &__block-1_title,
+    &__block-3_title {
+        text-align: right;
+        color: #e8b19c;
+        font-weight: 400;
+        font-size: 36px;
+        margin-bottom: 24px;
+        text-transform: uppercase;
+    }
+
+    &__block-1_text,
+    &__block-3_text {
+        color: #f4e7de;
+        font-size: 25px;
+        line-height: 31px;
+    }
+
+    &__block-1_container,
+    &__block-3_container {
+        text-align: left;
+    }
+
+    &__block-1_border,
+    &__block-2_border,
+    &__block-3_border {
+        position: absolute;
+        bottom: -49px;
+    }
+
+    &__block-1_image-box {
+        position: relative;
+
+        &::after {
+            content: 'Картинка № 1';
+            position: absolute;
+            top: 0;
+            left: 10%;
+            color: #f4e7de;
+            text-transform: uppercase;
+            font-size: 70px;
+            z-index: 10;
+        }
+    }
+
+    &__block-3_image-box {
+        position: relative;
+
+        &::after {
+            content: 'Картинка № 3';
+            position: absolute;
+            top: 0;
+            left: 10%;
+            color: #f4e7de;
+            text-transform: uppercase;
+            font-size: 70px;
+            z-index: 10;
+        }
+    }
+
+    &__block-2 {
+        display: flex;
+        justify-content: space-between;
+        padding-right: 30px;
+        padding-top: 84px;
+        margin-bottom: 84px;
+    }
+
+    &__block-2_content {
+        margin-left: 53px;
+        padding-top: 11px;
+        position: relative;
+    }
+
+    &__block-2_container {
+        text-align: left;
+    }
+
+    &__block-2_title {
+        text-align: right;
+        color: #e8b19c;
+        font-weight: 400;
+        font-size: 36px;
+        margin-bottom: 24px;
+        text-transform: uppercase;
+    }
+
+    &__block-2_text {
+        color: #f4e7de;
+        font-size: 25px;
+        line-height: 31px;
+    }
+
+    &__block-2_image-box {
+        position: relative;
+
+        &::after {
+            content: 'Картинка № 2';
+            position: absolute;
+            top: 0;
+            left: 10%;
+            color: #f4e7de;
+            text-transform: uppercase;
+            font-size: 70px;
+            z-index: 10;
+        }
+    }
+
 }
 
 
