@@ -40,14 +40,13 @@
 
 .banner {
     background: #212121 url('static/images/banner.jpg') no-repeat;
-    padding: 165px 0 125px;
+    padding: 165px 100px 125px 0;
     display: flex;
     justify-content: flex-end;
-    padding-right: 100px;
 
     &__content {
         text-align: center;
-        width: 60%;
+        width: 58vw;
     }
 
     &__title {
@@ -55,7 +54,7 @@
         text-transform: uppercase;
         font-family: var(--font-cambria);
         font-weight: normal;
-        font-size: 68px;
+        font-size: 3.5vw;
         letter-spacing: 2px;
         margin-bottom: 100px;
     }
@@ -65,7 +64,7 @@
         text-transform: uppercase;
         font-family: var(--font-cambria);
         font-weight: normal;
-        font-size: 50px;
+        font-size: 2.6vw;
         letter-spacing: 2px;
         margin-bottom: 115px;
     }
@@ -77,7 +76,7 @@
         font-weight: normal;
         letter-spacing: 2px;
         line-height: 66px;
-        font-size: 36px;
+        font-size: 1.9vw;
     }
 }
 
@@ -89,6 +88,7 @@
     &__border {
         display: block;
         margin: 0 auto 64px;
+        width: 56vw;
     }
 
     &__container {
@@ -194,6 +194,7 @@
     &__block-6_border {
         position: absolute;
         bottom: -49px;
+        width: 56vw;
     }
 
     &__block-1_image-box {
@@ -471,15 +472,177 @@
         background: none;
         padding: 0;
         border: none;
+        cursor: pointer;
     }
 }
 
-@media screen and (max-width: 1200px) {}
+@media screen and (max-width: 1770px) {
+    .container {
+        width: 95%;
+    }
 
-@media screen and (max-width: 768px) {}
+    .container-menu {
+        max-width: none;
+        width: 98%;
+    }
 
-@media screen and (max-width: 767px) {}
+    .banner {
+        background-position: left -24% top 0;
+        padding: 65px 0 260px;
+    }
 
-@media screen and (max-width: 486px) {}
+    .header {
+        &__item {
+            font-size: 1.4vw;
+        }
+    }
+}
 
-@media screen and (max-width: 320px) {}
+@media screen and (max-width: 1439px) {
+    .logo {
+        width: 20%;
+    }
+
+    .banner {
+        background-size: 70%;
+        padding: 65px 0 14vw;
+
+        &__text {
+            line-height: 50px;
+        }
+    }
+
+    .video {
+        &__container {
+            width: 90%;
+        }
+    }
+
+    .header__list {
+        margin-right: 0px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        padding: 9px 0;
+    }
+
+    .logo {
+        margin-left: 38px;
+    }
+
+    .header__items {
+        margin-right: 21px;
+    }
+
+    .banner {
+        background-size: 57%;
+        background-position: left -9% top -5px;
+        padding: 65px 0 4vw;
+    }
+
+    .banner__content {
+        width: 70vw;
+    }
+
+    .banner__subtitle {
+        margin-bottom: 50px;
+    }
+
+    .banner__title {
+        margin-bottom: 50px;
+    }
+
+    .banner__text {
+        line-height: 30px;
+    }
+
+    .video__container {
+        width: 692px;
+    }
+
+    .video__text {
+        font-size: 15px;
+        line-height: 25px;
+    }
+}
+
+@media screen and (max-width: 698px) {
+    .logo {
+        width: 27%;
+        margin-left: 20px;
+    }
+
+    .header__item {
+        font-size: 2vw;
+    }
+
+    .banner__content {
+        width: 100%;
+    }
+
+    .video__container {
+        width: 98%;
+    }
+
+    .banner {
+        padding: 340px 0 4vw;
+        background-position-x: center;
+        background-size: 380px;
+
+        &__text {
+            font-size: 3.2vw;
+        }
+    }
+
+    .banner__title {
+        margin-bottom: 5%;
+        font-size: 4.2vw;
+    }
+
+    .banner__subtitle {
+        margin-bottom: 5%;
+        font-size: 3.3vw;
+    }
+}
+
+
+@media screen and (max-width: 395px) {
+
+    .header {
+        padding: 15px 0;
+    }
+
+    .logo {
+        width: 45%;
+        margin: 0 auto;
+    }
+
+    .header__nav {
+        display: none;
+    }
+
+    .banner {
+        background-size: 90%;
+        padding: 80% 0 4vw;
+    }
+
+    .video__container {
+        width: 100%;
+        margin-bottom: 20%;
+    }
+
+    .banner__text {
+        font-size: 4vw;
+        line-height: 25px;
+    }
+
+    .banner__title {
+        font-size: 5.4vw;
+    }
+
+    .banner__subtitle {
+        font-size: 4.1vw;
+    }
+}
