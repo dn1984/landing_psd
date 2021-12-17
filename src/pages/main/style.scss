@@ -197,50 +197,50 @@
         width: 56vw;
     }
 
-    &__block-1_image-box {
-        position: relative;
+    // &__block-1_image-box {
+    //     position: relative;
 
-        &::after {
-            content: 'Картинка № 1';
-            position: absolute;
-            top: 0;
-            left: 10%;
-            color: #f4e7de;
-            text-transform: uppercase;
-            font-size: 70px;
-            z-index: 10;
-        }
-    }
+    //     &::after {
+    //         content: 'Картинка № 1';
+    //         position: absolute;
+    //         top: 0;
+    //         left: 10%;
+    //         color: #f4e7de;
+    //         text-transform: uppercase;
+    //         font-size: 70px;
+    //         z-index: 10;
+    //     }
+    // }
 
-    &__block-3_image-box {
-        position: relative;
+    // &__block-3_image-box {
+    //     position: relative;
 
-        &::after {
-            content: 'Картинка № 3';
-            position: absolute;
-            top: 0;
-            left: 10%;
-            color: #f4e7de;
-            text-transform: uppercase;
-            font-size: 70px;
-            z-index: 10;
-        }
-    }
+    //     &::after {
+    //         content: 'Картинка № 3';
+    //         position: absolute;
+    //         top: 0;
+    //         left: 10%;
+    //         color: #f4e7de;
+    //         text-transform: uppercase;
+    //         font-size: 70px;
+    //         z-index: 10;
+    //     }
+    // }
 
-    &__block-5_image-box {
-        position: relative;
+    // &__block-5_image-box {
+    //     position: relative;
 
-        &::after {
-            content: 'Картинка № 5';
-            position: absolute;
-            top: 0;
-            left: 10%;
-            color: #f4e7de;
-            text-transform: uppercase;
-            font-size: 70px;
-            z-index: 10;
-        }
-    }
+    //     &::after {
+    //         content: 'Картинка № 5';
+    //         position: absolute;
+    //         top: 0;
+    //         left: 10%;
+    //         color: #f4e7de;
+    //         text-transform: uppercase;
+    //         font-size: 70px;
+    //         z-index: 10;
+    //     }
+    // }
 
     &__block-2,
     &__block-4 {
@@ -292,50 +292,50 @@
         line-height: 31px;
     }
 
-    &__block-2_image-box {
-        position: relative;
+    // &__block-2_image-box {
+    //     position: relative;
 
-        &::after {
-            content: 'Картинка № 2';
-            position: absolute;
-            top: 0;
-            left: 10%;
-            color: #f4e7de;
-            text-transform: uppercase;
-            font-size: 70px;
-            z-index: 10;
-        }
-    }
+    //     &::after {
+    //         content: 'Картинка № 2';
+    //         position: absolute;
+    //         top: 0;
+    //         left: 10%;
+    //         color: #f4e7de;
+    //         text-transform: uppercase;
+    //         font-size: 70px;
+    //         z-index: 10;
+    //     }
+    // }
 
-    &__block-4_image-box {
-        position: relative;
+    // &__block-4_image-box {
+    //     position: relative;
 
-        &::after {
-            content: 'Картинка № 4';
-            position: absolute;
-            top: 0;
-            left: 10%;
-            color: #f4e7de;
-            text-transform: uppercase;
-            font-size: 70px;
-            z-index: 10;
-        }
-    }
+    //     &::after {
+    //         content: 'Картинка № 4';
+    //         position: absolute;
+    //         top: 0;
+    //         left: 10%;
+    //         color: #f4e7de;
+    //         text-transform: uppercase;
+    //         font-size: 70px;
+    //         z-index: 10;
+    //     }
+    // }
 
-    &__block-6_image-box {
-        position: relative;
+    // &__block-6_image-box {
+    //     position: relative;
 
-        &::after {
-            content: 'Картинка № 6';
-            position: absolute;
-            top: 0;
-            left: 10%;
-            color: #f4e7de;
-            text-transform: uppercase;
-            font-size: 70px;
-            z-index: 10;
-        }
-    }
+    //     &::after {
+    //         content: 'Картинка № 6';
+    //         position: absolute;
+    //         top: 0;
+    //         left: 10%;
+    //         color: #f4e7de;
+    //         text-transform: uppercase;
+    //         font-size: 70px;
+    //         z-index: 10;
+    //     }
+    // }
 
 }
 
@@ -434,6 +434,10 @@
     }
 }
 
+*[class$="__border-line"] {
+    width: 64vw;
+}
+
 .price {
     text-align: center;
     padding-bottom: 300px;
@@ -473,6 +477,10 @@
         padding: 0;
         border: none;
         cursor: pointer;
+    }
+
+    &__buy-btn_image {
+        width: 321px;
     }
 }
 
@@ -521,6 +529,22 @@
     .header__list {
         margin-right: 0px;
     }
+
+    .price__title {
+        font-size: 4vw;
+
+        & br {
+            display: none;
+        }
+    }
+
+    .price__value {
+        font-size: 5vw;
+    }
+
+    .price__money {
+        font-size: 4vw;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -566,6 +590,14 @@
         font-size: 15px;
         line-height: 25px;
     }
+
+    .price__buy-btn_image {
+        width: 80%;
+    }
+
+    .price__title {
+        line-height: 170%;
+    }
 }
 
 @media screen and (max-width: 698px) {
@@ -604,6 +636,10 @@
     .banner__subtitle {
         margin-bottom: 5%;
         font-size: 3.3vw;
+    }
+
+    .price__buy-btn_image {
+        width: 40vw;
     }
 }
 
@@ -644,5 +680,25 @@
 
     .banner__subtitle {
         font-size: 4.1vw;
+    }
+
+    .price {
+        padding-bottom: 150px;
+    }
+
+    .price__title {
+        font-size: 5vw;
+    }
+
+    .price__title br {
+        display: block;
+    }
+
+    .price__value {
+        font-size: 10vw;
+    }
+
+    .price__money {
+        font-size: 8vw;
     }
 }
