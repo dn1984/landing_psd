@@ -100,6 +100,7 @@
 
 
     &__item {
+        width: 13vw;
         background: none;
         border: none;
         color: #d9b4a5;
@@ -549,7 +550,7 @@
 
     .banner {
         background-position: left -24% top 0;
-        padding: 65px 0 260px;
+        padding: 10% 0 260px;
     }
 
     .header {
@@ -657,12 +658,13 @@
 
 @media screen and (max-width: 1440px) {
     .logo {
-        width: 20%;
+        width: 49%;
     }
 
     .banner {
         background-size: 70%;
-        padding: 65px 0 14vw;
+        padding: 12% 0 14vw;
+        background-position-y: 20%;
 
         &__text {
             line-height: 50px;
@@ -685,7 +687,7 @@
     }
 
     .header__items {
-        margin-right: 47px;
+        margin-right: 20px;
     }
 
     .price__title {
@@ -747,7 +749,7 @@
 
     .banner {
         background-size: 57%;
-        background-position: left -9% top 8px;
+        background-position: left -9% top 25px;
         padding: 65px 0 4vw;
 
         &__content {
@@ -842,7 +844,6 @@
 
 @media screen and (max-width: 698px) {
     .logo {
-        width: 27%;
         margin-left: 5px;
     }
 
@@ -893,6 +894,11 @@
 }
 
 @media screen and (max-width: 500px) {
+    .logo-link {
+        margin: 0 auto;
+        text-align: center;
+    }
+
 
     .logo {
         width: 45%;
