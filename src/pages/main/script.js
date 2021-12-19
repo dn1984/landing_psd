@@ -50,13 +50,12 @@ $(document).ready(function() {
 
     //Кнопка наверх
 
-    
         $(window).scroll(function () {
             // Если отступ сверху больше 1500px то показываем кнопку "Наверх"
             if ($(this).scrollTop() > 1500) {
-                $('#button-up').fadeIn();
+                $('#button-up').removeClass('hidden');
             } else {
-                $('#button-up').fadeOut();
+                $('#button-up').addClass('hidden');
             }
         });
         
