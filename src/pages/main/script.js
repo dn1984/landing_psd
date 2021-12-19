@@ -67,6 +67,6 @@ $(document).ready(function() {
             return false;
         });
 
-
 });
 
+// Анимации блоков 

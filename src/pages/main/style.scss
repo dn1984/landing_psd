@@ -425,8 +425,6 @@
 
     &__text_bold {
         font-weight: 700;
-        border: 2px solid #fff;
-        padding: 1%;
         text-indent: 3%;
     }
 
@@ -749,7 +747,7 @@
 
     .banner {
         background-size: 57%;
-        background-position: left -9% top -5px;
+        background-position: left -9% top 8px;
         padding: 65px 0 4vw;
     }
 
@@ -953,11 +951,9 @@
 
     .banner {
         background-position: left 150% top -5px;
-    }
-
-    .banner {
+        background-position-y: 60px;
         background-size: 90%;
-        padding: 80% 0 4vw;
+        padding: 95% 0 4vw;
     }
 
     .video__container {
